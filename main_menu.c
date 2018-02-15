@@ -11,21 +11,20 @@ int main()
 
   while(main_menu_option == 1 || main_menu_option == 2)
   {
-      switch(main_menu_option)
-	{
-	case 1:      
-	  printf("\e[1;1H\e[2J");                              //clear screen
-	  break;
+    switch(main_menu_option)
+  	{
+  	case 1:
+  	  printf("\e[1;1H\e[2J");                              //clear screen
+  	  break;
 
-	case 2:
-	  printf("Thank you for playing!");
-	  getchar();
-	  return 1;
-	  break;
+  	case 2:
+  	  printf("Thank you for playing!");
+  	  getchar();
+  	  return 1;
+  	  break;
 
-	default:
-	  printf("Please select a valid option (1 or 2)\n");
+  	default:
+  	  printf("Please select a valid option (1 or 2)\n");
+    }
   }
-  
-}
 }
